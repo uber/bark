@@ -9,3 +9,5 @@ go:
 before_install:
   - go get -u github.com/Sirupsen/logrus
   - go get -u github.com/cactus/go-statsd-client/statsd
+  - go get -u github.com/stretchr/testify/assert
+  - go get -u github.com/stretchr/testify/require
