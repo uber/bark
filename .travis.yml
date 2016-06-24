@@ -1,0 +1,13 @@
+---
+language: go
+
+go:
+  - 1.4
+  - 1.5
+  - tip
+
+before_install:
+  - go get -u github.com/Sirupsen/logrus
+  - go get -u github.com/cactus/go-statsd-client/statsd
+  - go get -u github.com/stretchr/testify/assert
+  - go get -u github.com/stretchr/testify/require
