@@ -29,7 +29,7 @@ import (
 	"time"
 
 	"github.com/cactus/go-statsd-client/statsd"
-	"github.com/sirupsen/logrus"
+	"github.com/Sirupsen/logrus"
 )
 
 // Logger is an interface for loggers accepted by Uber's libraries.
