@@ -16,13 +16,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-package zapify_test
+package zbark_test
 
 import (
 	"errors"
 	"testing"
 
 	"github.com/uber-common/bark"
+	"github.com/uber-common/bark/zbark"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -35,7 +36,7 @@ func newTestLogger() (bark.Logger, *observer.ObservedLogs) {
 	core, logs := observer.New(zap.LevelEnablerFunc(func(zapcore.Level) bool {
 		return true
 	}))
-	return bark.NewLoggerFromZap(zap.New(core)), logs
+	return zbark.New(zap.New(core)), logs
 }
 
 func TestBarkLoggerWith(t *testing.T) {

@@ -16,5 +16,5 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-// Package zapify integrates Bark with Zap (go.uber.org/zap).
-package zapify
+// Package zbark integrates Bark with Zap (go.uber.org/zap).
+package zbark
